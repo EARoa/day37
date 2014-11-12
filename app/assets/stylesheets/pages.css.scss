@@ -1,3 +1,84 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body, button{
+  font-family: 'Myriad Pro';
+}
+
+.controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+
+label{
+  font-weight: 400;
+  margin: 0 .8em 0 0;
+}
+
+
+button.active{
+  background: #68b8c4;
+}
+
+
+button + label{
+  margin-left: 1em;
+}
+
+.container{
+  padding: 2% 2% 0;
+  text-align: justify;
+  font-size: 0.1px;
+  background: #8C8C8C;
+
+}
+
+.container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+
+.gap{
+  display: inline-block;
+  width: 49%;
+}
+
+.mix{
+  text-align: left;
+  background: #F2F2F2;
+  margin-bottom: 2%;
+  display: none;
+  height: 10rem;
+  overflow: hidden;
+}
+
+
+.mix:after{
+  content: attr(data-myorder);
+  color: gray;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4% 6%;
+  font-weight: 700;
+}
+
+.mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+@media all and (min-width: 420px){
+  .container .mix,
+  .container .gap{
+    width: 32%;
+  }
+}
+
+@media all and (min-width: 640px){
+  .container .mix,
+  .container .gap{
+    width: 23.5%;
+  }
+}

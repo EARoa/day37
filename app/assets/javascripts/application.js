@@ -11,6 +11,22 @@
 // about supported directives.
 //
 //= require jquery
+
+
+//= require jquery.mixup
+
+
+
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+
+
+
+
+$(function(){
+	$('#Container').mixItUp();
+
+});
